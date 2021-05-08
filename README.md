@@ -19,7 +19,7 @@
 
 > java -jar .\WordCount.jar -c .\test.txt
 - 结果：
-> Number of characters:「 12 」
+> Number of characters:「 18 」
 
 
 
@@ -30,30 +30,27 @@
 
 ## 项目结构
 
+```
 └─WordCounter-master
     ├─experiment
-        └─WordCount.jar **运行jar包**
-        └─test.txt **测试文本文件**
+    │    └─WordCount.jar   运行jar包
+    │    └─test.txt        测试文本文件
     └─src
         └─WordCount
-            ├─out
-            │  └─artifacts
-            │      └─WordCount_jar
             └─src
                 ├─main
                 │  ├─java
                 │  │  └─com
                 │  │      └─hypocrite30
-                │  │		  └─Application.java 主程序入口
+                │  │		  └─Application.java             主程序入口
                 │  │          └─utils
-                │  │		    └─TextStatisticsUtils.java 工具类
+                │  │		    └─TextStatisticsUtils.java   工具类
                 │  └─resources
                 │      └─META-INF jar包配置
                 └─test
                     └─java
-                        └─RegexTest.java
-
-
+                        └─RegexTest.java  正则表达式测试
+```
 
 
 
