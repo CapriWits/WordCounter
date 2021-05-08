@@ -10,7 +10,7 @@
 - 「空格」「逗号」隔开来的单词都算作单词，不做有效性检验。
   - 如：`thi#,that` 算作两个单词。
 
-└─ experiment
+
     └─ `WordCount.jar` 为运行文件。
 
 📌运行格式为：`[parameter] [input_file_name]`
