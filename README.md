@@ -10,8 +10,7 @@
 - 「空格」「逗号」隔开来的单词都算作单词，不做有效性检验。
   - 如：`thi#,that` 算作两个单词。
 
-
-    └─ `WordCount.jar` 为运行文件。
+`WordCount.jar` 为运行文件。
 
 📌运行格式为：`[parameter] [input_file_name]`
 
@@ -20,6 +19,14 @@
 > java -jar .\WordCount.jar -c .\test.txt
 - 结果：
 > Number of characters:「 18 」
+
+📌注：test文件完美测试程序，但是实际clone下来，跑程序的时候显示的字符数是 17。
+
+test样例为：` word# word#, word ` 
+
+> 空word#空word#,空word空\r\n
+
+而git推上gihub时，test.txt测试文档直接从 `Windows(CRLF)` 编码变成 `Unix(LF)`，测试了一个晚上才发现这个问题，当时真的要吐血了。。。可以用记事本打开右下角的编码。 Unix 模式下 \r\n 转变成 \n。转换编码测出来还是18，或者自行更换测试样例。
 
 
 
